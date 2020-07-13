@@ -35,12 +35,17 @@
 
 /* Genreal Styles */
 
+html {
+    scroll-behavior: smooth;
+}
 
 body{
     background-color: var(--bcg-light);
     color: var(--clr-dark);
     font-size: var(--fs-body);
     line-height: 1.6;
+    text-align: justify;
+    
     /* scroll-behavior: smooth !important; */
 }
 
@@ -82,7 +87,6 @@ a:hover{
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
-    text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: bold;
     transition: transform 200ms ease-in-out;
@@ -189,7 +193,7 @@ header a:focus {
 
     padding: .25em 1em;
     background: var(--clr-decoration);
-    color: var(--clr-light);
+    color: white;
     font-family: sans-serif;
     
 }
@@ -226,12 +230,11 @@ header a:focus {
     }
 }
 
-/* My services */
+/* My Skills */
 
 
 .mySkills{
     background-color: var(--clr-dark);
-    background-image: url(../img/background.jpg);
     background-blend-mode: darken;
     background-size: cover;
     color: #fff;
@@ -257,20 +260,65 @@ header a:focus {
 }
 
 
-.skills{
-    max-width: 500px;
-    margin: 0 auto;
-    margin-bottom: 4em;
-}
-
 .skillsIntro{
     max-width: 60%;
     align-self: center;
 }
 
-ul,li{
-    list-style: none;
-    padding: 0;
+
+.skillsContainer{
+    margin: 0 auto;
+    margin-bottom: 4em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.techSkills{
+    padding: 20px 60px;
+    border-right: 1px solid var(--clr-text);
+}
+.languages{
+    padding: 20px 60px;
+    border-right: 1px solid var(--clr-text);
+}
+
+.softSkills{
+    padding: 20px 60px;
+    border-right: 1px solid var(--clr-text);
+}
+
+.languages small{
+    color: var(--clr-text);
+}
+
+.skillsContainer p{
+    font-style: italic;
+}
+
+@media(max-width: 600px){
+
+    .skillsContainer{
+        flex-flow: column;
+    }
+
+    .techSkills{
+        padding: 20px;
+        border-right: none;
+        border-bottom: 1px solid var(--clr-text);
+    }
+    
+    .softSkills{
+        padding: 20px;
+        border-right: none;
+        border-bottom: 1px solid var(--clr-text);
+    }  
+
+    .languages{
+        padding: 20px;
+        border-right: none;
+        border-bottom: 1px solid var(--clr-text);
+    }
+
 }
 
 /* About-Me */
@@ -291,21 +339,30 @@ ul,li{
 
     padding: .25em 1em;
     background: var(--clr-decoration);
-    color: var(--clr-light);
+    color: white;
     font-family: sans-serif;
     
 }
+
+.aboutMeBody p:first-line {
+    text-indent:20px;
+    text-align: justify;
+}
+
+
+
 
 @media(min-width: 600px){
 
 
     .aboutMe{
         display: grid;
-        grid-template-columns: 1fr 500px;
-        grid-template-areas: "title img"
+        grid-template-columns: 40% 60%;
+        grid-template-areas: "title img" 
                              "subtitle img"
-                             "text img";
-        grid-column-gap: 2em;
+                             "text img"
+                             ;
+        grid-column-gap: 1em;
 
 
     }
@@ -334,9 +391,11 @@ ul,li{
         position: relative;
         z-index: 2;
         max-width: 400px;
-        margin-left: 100px;
+        margin-right: 40px;
     
     }
+
+
 
 }
 
@@ -349,7 +408,7 @@ ul,li{
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;
-    padding: 3em 2em 5em;
+    padding: 3em 2em 2em;
 }
 
 .myWork h2{
@@ -359,7 +418,8 @@ ul,li{
 
 
 .carousel-item{
-    height: 400px;
+    height: auto;
+    padding: 2em;
 } 
 .carousel-item img{
     height: 300px;
@@ -372,9 +432,11 @@ ul,li{
     top: 10px;
 }
 
-.carousel-indicators{
-    position: relative;
-    top: 460px;
+
+.carousel-item img:hover{
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
+    cursor: pointer; 
 }
 
 
