@@ -432,6 +432,10 @@ header a:focus {
     top: 10px;
 }
 
+.carousel-caption p{
+    font-style: italic;
+}
+
 
 .carousel-item img:hover{
     transform: scale(1.1);
