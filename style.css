@@ -82,8 +82,8 @@ a:hover{
 
 .button{
     display: inline-block;
-    width: 120px;
-    height: 60px; 
+    width: 200px;
+    height: 40px;
     padding: .5em 2.5em;
     background-color: #4F2065;
     text-decoration: none;
@@ -454,7 +454,7 @@ header a:focus {
     text-align: justify;
     justify-content: center;
     align-content: center;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 
