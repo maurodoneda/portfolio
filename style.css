@@ -239,6 +239,8 @@ header a:focus {
 
     .intro{
         height: 100vh;
+        position: relative;
+        top: 10vh;
     }
 }
 
@@ -308,7 +310,7 @@ header a:focus {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    border: none; 
+    border: none;
 }
 
 .skillsSectionTitle{
