@@ -46,15 +46,15 @@
 						&lt;mDev&gt;
 				</div>
 
-				<ul class="navbar-nav flex-row-nowrap">
-					<li class="nav-item home">
+				<ul class="navbar-nav flex-row-nowrap" id="myNavbar">
+					<li class="nav-item home active">
 						<a class="nav-link" href="#">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link flex-nowrap" href="#skills">My Skills</a>
+						<a class="nav-link flex-nowrap" href="#aboutMe">About Me</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link flex-nowrap" href="#aboutMe">About Me</a>
+						<a class="nav-link flex-nowrap js-scroll-trigger" href="#skills">My Skills</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#work">My Projects</a>
@@ -97,19 +97,36 @@
 			<br />
 		</section>
 
+			<!-- about-me -->
+
+			<section class="aboutMe" id="aboutMe">
+				<h2 class="sectionTitle sectionTitleAbout">About Me</h2>
+				<p class="sectionSubtitle sectionSubAbout">
+					Passionate software developer based in Milton Keynes, UK
+				</p>
+				<div class="aboutMeBody">
+					<br>
+					<p>
+					My name is Mauro Cesar Doneda. I am an Italo-Brazilian Software Developer . I have
+					6 Years of experience in the Engineering and Finance fields and a further year in
+					programming.
+					<p>
+
+						I've been living in the UK (Milton Keynes) for the last 2 years and here, I'm diving into the world of coding and programming. Since starting this journey I've felt immediately in love with it! Programming checks so many boxes on the list of things I like to do that it makes me wonder how it took me so long to discover it! Now I'm committed to becoming the best software developer I can! 
+					</p>
+					<p>
+						Currently I am developing my skills in C# and JavaScript, I love to learn new things, test my skills and take on new challenges,  I can't wait to start on the next! Please feel free to get in touch!
+					</p>
+					
+
+					</p>
+				</div>
+			</section>
+
 		<!-- my skills -->
 
 		<section class="mySkills" id="skills">
-			<div class="skillsIntro">
-				<p>
-					I'm a passionate software developer based in Milton Keynes, UK. I have
-					a 6 Years background in Engineering and Finance and 1 Year in
-					Programming, my skillset is varied and fits lots of situations! Check
-					bellow some of my skills and also the projects I've build!
-				</p>
-			</div>
-
-			<h3 class="skillsSectionTitle">Some of My Skills</h3>
+			<h2 class="skillsSectionTitle">My Skills</h2>
 
 			<div class="skillsContainer">
 				<div class="techSkills">
@@ -165,22 +182,59 @@
 
 		</section>
 
-		<!-- about-me -->
-
-		<section class="aboutMe" id="aboutMe">
-			<h2 class="sectionTitle sectionTitleAbout">About Me</h2>
-			<p class="sectionSubtitle sectionSubAbout">
-				Software Dev in the UK
-			</p>
-			<div class="aboutMeBody">
-				<br>
-				<p>
-				    My name is Mauro Cesar Doneda. I am an Italo-Brazilian Developer with background in Engineering and Stocks Trading. I've been living in the UK (Milton Keynes) for the last 2 years, here I'm diving into the world of coding and programming. Since I've started, I've felt immediately in love with it! Programming checks so many boxes in the list of things I like to do that makes me wonder how did it take me so long to discover it!? Now I'm committed in being the best software developer I can! Currently I am developing my skills in C# and JavaScript, I love to learn new things, test my skills and take on challenges, can't wait to start on the next! Contact me and lets chat about it! Cheers!  
-				</p>
+		<section class="experienceSection">
+			<h2 class="expSectionTitle">My Experiences</h2>
+			<div class="container timeLine">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="main-timeline7">
+							<div class="timeline">
+								<div class="timeline-icon"><i class="fa fa-globe"></i></div>
+								<span class="year">2018</span>
+								<div class="timeline-content">
+									<h5 class="title">Software Developer</h5>
+									<p class="description">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+									</p>
+								</div>
+							</div>
+							<div class="timeline">
+								<div class="timeline-icon"><i class="fa fa-rocket"></i></div>
+								<span class="year">2016</span>
+								<div class="timeline-content">
+									<h5 class="title">Stocks and Futures Trader</h5>
+									<p class="description">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+									</p>
+								</div>
+							</div>
+							<div class="timeline">
+								<div class="timeline-icon"><i class="fa fa-briefcase"></i></div>
+								<span class="year">2013</span>
+								<div class="timeline-content">
+									<h5 class="title">Financial Analyst</h5>
+									<p class="description">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+									</p>
+								</div>
+							</div>
+							<div class="timeline">
+								<div class="timeline-icon"><i class="fa fa-mobile"></i></div>
+								<span class="year">2011</span>
+								<div class="timeline-content">
+									<h5 class="title">Product Suport Analyst</h5>
+									<p class="description">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac venenatis enim. Aenean hendrerit justo sed.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-
-			<img class="aboutMePic" src="img/AboutMePic.jpg" alt="meAtDrudleDoor" />
 		</section>
+
+	
 
 		<!-- my work -->
 
@@ -188,8 +242,8 @@
 			<h2>My work</h2>
 			<p>
 				In this section you can find some of the projects that I have created,
-				feel free to click on anyone of it to check the code and a sample of it
-				working!
+				feel free to click on any one of them to check the code and demo how they work!
+
 			</p>
 			<!-- Carousel -->
 			<div
@@ -344,5 +398,6 @@
 			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 			crossorigin="anonymous"
 		></script>
+		<script src="main.js"></script>
 	</body>
 </html>
