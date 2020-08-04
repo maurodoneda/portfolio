@@ -234,8 +234,6 @@ header a:focus {
 
     .intro{
         height: 100vh;
-        position: relative;
-        top: 10vh;
     }
 }
 
