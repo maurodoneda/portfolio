@@ -209,10 +209,24 @@ header a:focus {
 
 
 /*  ------------    Intro section  ----------------  */
+/* .home{
+    background-color: var(--clr-dark);
+} */
+
 
 .intro{
-    padding-top: 10em;  
+    font-weight: bold;
+    color: black;
+    position: relative;
+    z-index: 20;  
 }
+
+.intro span{
+ font-weight: 400;
+ font-style: italic;
+}
+
+
 
 #profilePic{
     
@@ -220,15 +234,6 @@ header a:focus {
     width: 100%;
    
 }
-
-section .intro{
-    position: relative;
-    background-color: black;
-    height: 75vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-  }
 
  
   
@@ -239,10 +244,21 @@ section .intro{
     position: fixed;
     top: 0;
     left: 0;
-    opacity: 0.5;
+    opacity: 0.5;   
     z-index: -1;
 } 
-  
+
+/* .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--clr-dark);  
+    opacity: 0.8;
+    z-index: 0;
+  } */
+
 
 .sectionSubIntro{
 
@@ -298,12 +314,14 @@ section .intro{
 
 
 .aboutMe{
-    margin: 10px auto 0 auto;
+    margin: 0 auto;
     background-color: var(--clr-dark);
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    z-index: 10;
 }
 
 .sectionTitleAbout{
@@ -353,15 +371,20 @@ section .intro{
 
 /*------------------ My Skills ---------------       */
 
+
 .mySkills{
-    background-color: var(--clr-dark);
     color: white;
+    font-weight: bolder;
     text-align: center;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     border: none;
+    position: relative;
+    z-index: 10;
+    background-color: var(--clr-dark);
+ 
 }
 
 .skillsSectionTitle{
@@ -483,6 +506,8 @@ section .intro{
     color: var(--clr-light);
     text-align: center;
     padding: 3em 2em 2em;
+    position: relative;
+    z-index: 10;
 }
 
 .myWork h2{
@@ -535,6 +560,8 @@ section .intro{
 
 .experienceSection{
     background:white;
+    position: relative;
+    z-index: 10;
 }
 
 .expSectionTitle{
@@ -743,6 +770,8 @@ section .intro{
     text-align: center;
     padding: 1.5em 0;
     font-size: var(--fs-h3);
+    position: relative;
+    z-index: 10;
 }
 
 
@@ -812,4 +841,6 @@ footer{
     justify-content: center;
     align-content: center;
     padding: 12px;
+    position: relative;
+    z-index: 10;
 }
