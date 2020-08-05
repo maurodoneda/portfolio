@@ -416,6 +416,13 @@ header a:focus {
     font-style: italic;
 }
 
+.cvBtn{
+    background-color: #145F5F;
+    text-decoration: none;
+    border: none;
+    width: 80px;  
+}
+
 @media(max-width: 600px){
 
     .skillsContainer{
@@ -706,7 +713,7 @@ header a:focus {
     background: var(--clr-decoration);
     color: var(--clr-light);
     text-align: center;
-    padding: 1em 0;
+    padding: 1.5em 0;
     font-size: var(--fs-h3);
 }
 
@@ -715,16 +722,16 @@ header a:focus {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0 0 0;
+    margin: 10px 0 0 0;
     padding: 0;
 }
 
 .socialItem{
-    margin: 0 .5em;
-    padding: .5em;
+    margin: 0 5px 5px 5px;
+    padding: 0 10px 10px 5px;
 }
 
-/* ------- Contact form  -------------------- */
+/* -------   Contact form  -------------------- */
 
 .contact-form{
     background: #fff;
@@ -738,13 +745,9 @@ header a:focus {
 .contact-msg{
    color: #145F5F;
    position: relative;
-   top: -15px;
+   top: 50px;
 }
 
-.form-grid{
-    position: relative;
-    top: -50px;
-}
 .contact-form .form-control{
     border-radius:1rem;
 }
@@ -754,24 +757,17 @@ header a:focus {
     top: 40px;
     color: #391752;
 }
-.contact-form form{
-    padding: 14%;
-}
+
 .contact-form form .row{
-    margin-bottom: -7%;
+    margin-bottom: -3%;  
 }
-.contact-form h3{
-    margin-bottom: 8%;
-    margin-top: -10%;
-    text-align: center;
-    color: #0062cc;
-}
+
 
 .contact-form .btn{
     width: 150px;
     color: white;
     position: relative;
-    top: 10px;
+    top: 40px;
     background-color: #391752;
     border: none;
     transition: transform 200ms ease-in-out;
@@ -779,4 +775,13 @@ header a:focus {
 
 .contact-form .btn:hover{
     transform: scale(1.1);   
+}
+
+footer{
+    display: flex;
+    background-color:#2B1146;
+    color: white;
+    justify-content: center;
+    align-content: center;
+    padding: 12px;
 }
