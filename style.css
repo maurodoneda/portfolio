@@ -211,7 +211,7 @@ header a:focus {
 /*  ------------    Intro section  ----------------  */
 
 .intro{
-    padding-top: 10em;
+    padding-top: 10em;  
 }
 
 #profilePic{
@@ -220,6 +220,29 @@ header a:focus {
     width: 100%;
    
 }
+
+section .intro{
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+ 
+  
+.myVideo{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+} 
+  
 
 .sectionSubIntro{
 
@@ -267,6 +290,7 @@ header a:focus {
 
     .intro{
         height: 100vh;
+        align-content: center;
     }
 }
 
@@ -508,6 +532,10 @@ header a:focus {
 
 
 /* ----------         TimeLine         ---------------- */
+
+.experienceSection{
+    background:white;
+}
 
 .expSectionTitle{
     color: #145F5F;
