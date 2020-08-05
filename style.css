@@ -141,33 +141,7 @@ a:hover{
         padding-top: 11em;
     }
 
-    .myWork{
-        padding-top: 12em !important;
-    }
-    .contact{
-        padding-top: 8em !important;
-    }
 }
-
-@media(max-width:800px){
-    section{
-        padding-top: 10em;
-    }
-
-    .myWork{
-        padding-top: 11em !important;
-    }
-}
-
-@media(min-width:800px){
-
-    .myWork{
-        padding-top: 6em !important;
-    }
-
-}
-
-
 
 
 /* Header */
@@ -248,17 +222,6 @@ header a:focus {
     z-index: -1;
 } 
 
-/* .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--clr-dark);  
-    opacity: 0.8;
-    z-index: 0;
-  } */
-
 
 .sectionSubIntro{
 
@@ -273,6 +236,8 @@ header a:focus {
 
 @media (min-width: 600px){
     .intro{
+        height: 100vh;
+        align-content: center;
         display: grid;
         width: max-content;
         margin: 0 auto;
@@ -302,13 +267,6 @@ header a:focus {
     }
 }
 
-@media (min-width: 1000px){
-
-    .intro{
-        height: 100vh;
-        align-content: center;
-    }
-}
 
 /* ----------------   About-Me   --------------- */
 
@@ -322,6 +280,22 @@ header a:focus {
     justify-content: center;
     position: relative;
     z-index: 10;
+}
+
+@media(max-width:800px){
+    
+    .aboutMe{
+         padding-top: 11em;
+    }
+}
+
+
+@media(min-width:800px){
+
+    .aboutMe{
+        padding-top: 6em;
+    }
+
 }
 
 .sectionTitleAbout{
@@ -385,6 +359,22 @@ header a:focus {
     z-index: 10;
     background-color: var(--clr-dark);
  
+}
+
+@media(max-width:800px){
+    
+    .mySkills{
+         padding-top: 11em;
+    }
+}
+
+
+@media(min-width:800px){
+
+    .mySkills{
+        padding-top: 6em;
+    }
+
 }
 
 .skillsSectionTitle{
@@ -510,6 +500,7 @@ header a:focus {
     z-index: 10;
 }
 
+
 .myWork h2{
     margin-bottom: 30px;
     color: var(--clr-text);
@@ -552,6 +543,22 @@ header a:focus {
     margin-top: 10px;
 }
 
+@media(max-width:800px){
+    
+    .myWork{
+         padding-top: 11em;
+    }
+}
+
+
+@media(min-width:800px){
+
+    .myWork{
+        padding-top: 6em;
+    }
+
+}
+
 
 
 
@@ -562,6 +569,21 @@ header a:focus {
     background:white;
     position: relative;
     z-index: 10;
+}
+@media(max-width:800px){
+    
+    .experienceSection{
+         padding-top: 11em;
+    }
+}
+
+
+@media(min-width:800px){
+
+    .experienceSection{
+        padding-top: 6em;
+    }
+
 }
 
 .expSectionTitle{
@@ -787,6 +809,15 @@ header a:focus {
     margin: 0 5px 5px 5px;
     padding: 0 10px 10px 5px;
 }
+
+@media(max-width:800px){
+    
+    .contact{
+         padding-top: 7em;
+    }
+}
+
+
 
 /* -------   Contact form  -------------------- */
 
