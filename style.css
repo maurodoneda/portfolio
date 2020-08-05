@@ -112,6 +112,7 @@ a:hover{
 
 
 
+
 :focus{
     outline: 3px solid var(--clr-text);
     outline-offset: 3px;
@@ -142,6 +143,9 @@ a:hover{
 
     .myWork{
         padding-top: 12em !important;
+    }
+    .contact{
+        padding-top: 8em !important;
     }
 }
 
@@ -383,8 +387,7 @@ header a:focus {
 }
 
 .otherLogo{
-    position: relative;
-    left: 10px;
+    justify-self: center;
 }
 
 .gridHeader{
@@ -699,11 +702,11 @@ header a:focus {
 
 /* --------------     Footer  --------- */
 
-.footer{
+.contact{
     background: var(--clr-decoration);
     color: var(--clr-light);
     text-align: center;
-    padding: 2.5em 0;
+    padding: 1em 0;
     font-size: var(--fs-h3);
 }
 
@@ -731,8 +734,11 @@ header a:focus {
     color: #145F5F;
 }
 
-footer form .contact-msg{
+
+.contact-msg{
    color: #145F5F;
+   position: relative;
+   top: -15px;
 }
 
 .form-grid{
@@ -742,14 +748,11 @@ footer form .contact-msg{
 .contact-form .form-control{
     border-radius:1rem;
 }
-.contact-image{
-    text-align: center;
-}
-.contact-image img{
-    border-radius: 6rem;
-    width: 11%;
-    margin-top: -3%;
-    transform: rotate(29deg);
+
+.icon{
+    position: relative;
+    top: 40px;
+    color: #391752;
 }
 .contact-form form{
     padding: 14%;
@@ -765,7 +768,7 @@ footer form .contact-msg{
 }
 
 .contact-form .btn{
-    width: 200px;
+    width: 150px;
     color: white;
     position: relative;
     top: 10px;

@@ -177,7 +177,7 @@
 				<p>Grit</p>
 			</div>
 		</div>
-		<a href="#work" class="button">My Work</a>
+
 
 	</section>
 
@@ -347,24 +347,25 @@
 
 	<!-- footer -->
 
-	<footer class="footer" id="contact">
+	<section class="contact" id="contact">
+		<br>
+		<h2>Contact Me</h2>
 
 		<div class="container contact-form">
-            <div class="contact-image">
-                <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
-            </div>
-            <form action="https://formspree.io/xnqgworb"
-			method="POST">
-                <h3 class="contact-msg">Did you like what you saw? Then send me a massege!</h3>
-				
+			
+				<p class="icon"><i class="far fa-paper-plane fa-2x"></i></p>
+			
+            <form action="https://formspree.io/xnqgworb" method="POST" id="my-form">
+				<p class="contact-msg">Did you like what you saw? Then send me a message!</p>
+				<br>
 				<br>
                <div class="row form-grid">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                            <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" required />
                         </div>
                         <div class="form-group">
-                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                            <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" required/>
                         </div>
                         <div class="form-group">
                             <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
@@ -372,7 +373,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+                            <textarea name="txtMsg" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;" required></textarea>
                         </div>
                     </div>
 				</div>
@@ -380,16 +381,17 @@
 					<input type="submit" class="btn btn-primary"/>
 				</div>
 				<br>
+				<p id="my-form-status"></p>
 				<br>
-				<h5 class="contact-msg">You can also download my CV here:</h5>
-					<input type="submit" class="btn btn-primary" value="CV"/>
+				<br>
+				
             </form>
 </div>
 		
 		<a href="mailto:mauro.doneda@gmail.com" class="footerLink">mauro.doneda@gmail.com</a>
 		<p>
 			<br />
-			<a href="">+44 7534 154055</a>
+			<p>+44 7534 154055</p>
 		</p>
 
 		<ul class="socialList">
@@ -402,10 +404,17 @@
 					rel="noopener noreferrer"><i class="fab fa-linkedin fa-lg"></i></a>
 			</li>
 		</ul>
-	</footer>
+		<br>
+				<h5>Download my CV here:</h5>
+				<a href="../resources/MauroDonedaCV.pdf" class="btn btn-primary" id="myCV" target="_blank" download>CV</a>
+		<br>
+		<br>
+			<footer><p>&copy; MauroDoneda.com - 2020 </p></footer>
+	</section>
 
 
 	<script src="main.js"></script>
+
 </body>
 
 </html>
