@@ -512,7 +512,14 @@ header a:focus {
     padding: 2em;
 } 
 .carousel-item img{
-    height: 300px;
+    height: 40vh;
+}
+
+@media(max-width: 500px){
+    .carousel-item img{
+        max-height: 250px;
+        max-width:250px;
+    }
 }
 
 .carousel-caption {
