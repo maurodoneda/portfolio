@@ -32,12 +32,16 @@
 
 <body data-spy="scroll" data-target="#myNavbar" data-offset="120">
 	<header class="container-fluid">
-		<nav class="navbar navbar-nav-scroll navbar-expand flex-column flex-md-row">
+		<nav class="navbar navbar-nav-scroll navbar-expand-md flex-md-row">
 			<div class="logo">
-				<a class="navbar-nav mr-0 mr-md-2 justify-content-center" href="#">
+				<a class="navbar-nav mr-0 mr-md-2" href="#">
 					&lt;mDev&gt;
 			</div>
-
+			<button class="navbar-toggler bg-info navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			
+			<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav flex-row-nowrap" id="myNavbar">
 				
 				<li class="nav-item">
@@ -63,12 +67,13 @@
 					<a href="https://github.com/maurodoneda" class="fab fa-github fa-lg nav-link" target="_blank"
 						rel="noopener noreferrer"></a>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item linkedIn">
 					<a href="https://www.linkedin.com/in/maurodoneda/" class="fab fa-linkedin fa-lg nav-link"
 						target="_blank" rel="noopener noreferrer"></a>
 				</li>
 				<li class="nav-item"></li>
 			</ul>
+		</div>
 		</nav>
 	</header>
 
@@ -203,9 +208,28 @@
 				<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
 				<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
 				<li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+				<li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
 			</ol>
 			<div class="carousel-inner" data-pause="false">
+				
 				<div class="carousel-item active">
+
+					<a  rel="noopener noreferrer">
+						<img src="img/InvestmentsApp.PNG" class="d-block w-auto rounded mx-auto" alt="console" />
+					</a>
+					<div class="carousel-caption d-md-block">
+						<h5>My Investments Dashboard</h5>
+						<p>A full-stack application for quick visualization of your investments returns. (Work in progress)</p>
+							<p>Tech used: C# / .NetCore3.1 / EntityFramework6 / RestAPI / React.js /Material UI / Chart.js</p>
+						<a  class="button"
+							rel="noopener noreferrer">Check It out!</a>
+						<a href="https://github.com/maurodoneda/myInvestmentsApp" class="button" target="_blank"
+							rel="noopener noreferrer">Check the code!</a>
+
+					</div>
+				</div>
+				
+				<div class="carousel-item">
 
 					<a href="http://mymoviesdb.quantodinheiro.com.br/" target="_blank" rel="noopener noreferrer">
 						<img src="img/MyMovies.png" class="d-block w-auto rounded mx-auto" alt="console" />

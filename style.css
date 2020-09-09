@@ -136,9 +136,9 @@ a:hover{
     transform: scale(1.1);
 }
 
-@media(max-width:420px){
+@media(max-width:500px){
     section{
-        padding-top: 11em;
+        padding-top:1em;
     }
 
 }
@@ -181,6 +181,25 @@ header a:focus {
     box-shadow: none!important;
 }
 
+@media(max-width: 768px){
+    header{
+        position: sticky;
+        z-index: 100;
+     
+    }
+
+    .logo:hover, header ul a:hover,.navbar-nav a.active{
+        color: var(--clr-text);
+        transform: none;
+    }
+
+    .linkedIn{
+        margin-left: 10px;
+    }
+
+    
+}
+
 
 /*  ------------    Intro section  ----------------  */
 /* .home{
@@ -192,7 +211,8 @@ header a:focus {
     font-weight: bold;
     color: black;
     position: relative;
-    z-index: 20;  
+    z-index: 20;
+    top: -70px;  
 }
 
 .intro span{
@@ -268,6 +288,19 @@ header a:focus {
 }
 
 
+@media(max-width: 500px){
+
+
+    .intro{
+  
+        z-index: 20;
+        top: 10px;  
+    }
+    
+    
+}
+
+
 /* ----------------   About-Me   --------------- */
 
 
@@ -285,7 +318,7 @@ header a:focus {
 @media(max-width:800px){
     
     .aboutMe{
-         padding-top: 11em;
+         padding-top: 3em;
     }
 }
 
@@ -364,7 +397,7 @@ header a:focus {
 @media(max-width:800px){
     
     .mySkills{
-         padding-top: 11em;
+        padding-top: 3em;
     }
 }
 
@@ -553,7 +586,7 @@ header a:focus {
 @media(max-width:800px){
     
     .myWork{
-         padding-top: 11em;
+        padding-top: 3em;
     }
 }
 
@@ -580,7 +613,7 @@ header a:focus {
 @media(max-width:800px){
     
     .experienceSection{
-         padding-top: 11em;
+        padding-top: 3em;
     }
 }
 
@@ -820,7 +853,7 @@ header a:focus {
 @media(max-width:800px){
     
     .contact{
-         padding-top: 7em;
+        padding-top: 3em;
     }
 }
 
